@@ -1,18 +1,17 @@
-import javax.sound.midi.Soundbank;
 import java.io.FileNotFoundException;
 import java.util.*;
 
 public class GameProvider {
 
     private int lives = 10;
-    ArrayList<String> wrongLetters = new ArrayList<>();
-    TreeMap<Integer, String> usedLetters = new TreeMap<>();
-    Scanner scan = new Scanner(System.in);
-    boolean isRunning = true;
-    String playerName;
-    boolean notWon = true;
-    int playTime;
-    FileManager fileManager = new FileManager();
+    private ArrayList<String> wrongLetters = new ArrayList<>();
+    private TreeMap<Integer, String> usedLetters = new TreeMap<>();
+    private Scanner scan = new Scanner(System.in);
+    private boolean isRunning = true;
+    private String playerName;
+    private boolean notWon = true;
+    private int playTime;
+    private FileManager fileManager = new FileManager();
 
 
     public void menu() throws FileNotFoundException {
@@ -40,7 +39,7 @@ public class GameProvider {
 
     }
 
-    public void game() throws FileNotFoundException {
+    private void game() throws FileNotFoundException {
         long startTime = System.currentTimeMillis();
         wrongLetters.clear();
         usedLetters.clear();
@@ -81,8 +80,8 @@ public class GameProvider {
         }
     }
 
-    public void compireLetters(String guessString, String guess) {
-        String charToAdd = new String();
+    private void compireLetters(String guessString, String guess) {
+        String charToAdd;
         String wrongCharToAdd = new String();
 
         int placeToAdd = 0;

@@ -15,7 +15,7 @@ public class FileManager {
 
 
 
-    public void randomLine(int randNum) throws FileNotFoundException {
+    private void randomLine(int randNum) throws FileNotFoundException {
         File temp = new File(fileName);
         Scanner file = new Scanner(temp);
         int line = 0;
@@ -29,7 +29,7 @@ public class FileManager {
     }
 
 
-    public int fileSize() throws FileNotFoundException {
+    private int fileSize() throws FileNotFoundException {
         int fileLineCounter = 0;
         File temp = new File(fileName);
         Scanner file = new Scanner(temp);
@@ -41,7 +41,7 @@ public class FileManager {
     }
 
 
-    public int randomNumber(int border){
+    private int randomNumber(int border){
         Random random = new Random();
         return random.nextInt(border);
     }
