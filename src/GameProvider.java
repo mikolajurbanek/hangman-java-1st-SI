@@ -15,7 +15,7 @@ public class GameProvider {
 
 
     public void menu() throws FileNotFoundException {
-        System.out.println("WELCOME TO HANGMAN GAME" +
+        System.out.println(
                 "\n   MENU:" +
                 "\n        (1) GAME" +
                 "\n        (2) SCORES" +
@@ -120,7 +120,7 @@ public class GameProvider {
             System.out.println("You have died, do You want to play again? (y/n)");
             playGameAgain();
         }
-        if (lives < 3 && lives>0){
+        if (lives <= 3 && lives>0){
             System.out.println("This is capital of " + country);
         }
     }
@@ -167,6 +167,6 @@ public class GameProvider {
     private void about(){
         System.out.println(" This is Hangman Game done by Mikołaj Urbanek, student of Codecool, rewrited in InteliJ." +
                 "\n Point of game is to guess one of the world's capitals." +
-                "\n Change your source path to play in FileManager.java file. ");
+                "\n To play you need to change your source path in FileManager file. ");
     }
 }
