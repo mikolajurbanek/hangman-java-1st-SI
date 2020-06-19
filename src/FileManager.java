@@ -10,8 +10,8 @@ public class FileManager {
 
 
     private String randomLine;
-    private String bestScoreFile = "/home/mikolaj/IdeaProjects/hangman-java-1st-SI/out/scores.txt";
-    private String fileName = "/home/mikolaj/IdeaProjects/hangman-java-1st-SI/out/countries_and_capitals.txt";
+    private String bestScoreFile = "src/resources/scores.txt";
+    private String fileName = "src/resources/countries_and_capitals.txt";
 
 
 

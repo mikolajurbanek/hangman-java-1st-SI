@@ -19,7 +19,8 @@ public class GameProvider {
                 "\n   MENU:" +
                 "\n        (1) GAME" +
                 "\n        (2) SCORES" +
-                "\n        (3) ABOUT");
+                "\n        (3) ABOUT" +
+                "\n        (0) EXIT");
 
     int opt = scan.nextInt();
     switch(opt) {
